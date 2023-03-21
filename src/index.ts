@@ -30,7 +30,7 @@ function api<T>(url: string, config: Config, id: number | string = ''): Promise<
 }
 
 // GET - запрос
-api<Data>(websiteUrl, { method: 'GET', headers: { 'Content-Type': 'application/json' } })
+api<Data[]>(websiteUrl, { method: 'GET', headers: { 'Content-Type': 'application/json' } })
   .then((data): void => {
     console.log(data);
   })
